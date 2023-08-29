@@ -57,7 +57,7 @@ for(let i=0;i<9;i++){
             }
            
 
-            cnt++;
+           
             //logic part
             if((box[0].innerHTML==box[1].innerHTML && box[1].innerHTML==box[2].innerHTML )|| (box[0].innerHTML==box[3].innerHTML && box[3].innerHTML==box[6].innerHTML )|| 
             (box[0].innerHTML==box[4].innerHTML && box[4].innerHTML==box[8].innerHTML) || (box[2].innerHTML==box[5].innerHTML) && (box[5].innerHTML==box[8].innerHTML) ||(box[2].innerHTML==box[4].innerHTML && box[4].innerHTML==box[6].innerHTML) || (box[6].innerHTML==box[7].innerHTML && box[7].innerHTML==box[8].innerHTML) || (box[1].innerHTML==box[4].innerHTML && box[4].innerHTML==box[7].innerHTML) || (box[3].innerHTML==box[4].innerHTML && box[4].innerHTML==box[5].innerHTML))
@@ -73,6 +73,7 @@ for(let i=0;i<9;i++){
                 turn.innerHTML="No Winner"
                 drawSound();
             }
+                 cnt++;
             
         }
     }
