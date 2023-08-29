@@ -39,12 +39,12 @@ for(let i=0;i<9;i++){
             if(box[i].innerHTML!='X' && box[i].innerHTML!='O'){
                 if(click){
                     box[i].innerHTML='X';
+                    playClickSound();
                     box[i].style.backgroundColor='red'
                     //this.style.backgroundColor='red'// We can use any one
                     box[i].style.color='black'
-                    playClickSound();
                     click=false;
-                    if(cnt==9){
+                    if(cnt==10){
                         turn.innerHTML="No Winner"
                         drawSound();
                     }
