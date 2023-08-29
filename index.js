@@ -42,6 +42,7 @@ for(let i=0;i<9;i++){
                     box[i].style.backgroundColor='red'
                     //this.style.backgroundColor='red'// We can use any one
                     box[i].style.color='black'
+                    playClickSound();
                     click=false;
                     if(cnt==9){
                         turn.innerHTML="No Winner"
