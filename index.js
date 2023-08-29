@@ -29,7 +29,7 @@ function drawSound(){
 
 click=true;
 var gameInd=true;
-var cnt=0;
+var cnt=1;
 for(let i=0;i<9;i++){
     box[i].addEventListener('click',function(){
         if(gameInd){
@@ -43,8 +43,12 @@ for(let i=0;i<9;i++){
                     //this.style.backgroundColor='red'// We can use any one
                     box[i].style.color='black'
                     click=false;
-                    playClickSound();
-                    turn.innerHTML=`Player-turn : O `
+                    if(cnt==9){
+                        turn.innerHTML="No Winner"
+                        drawSound();
+                    }
+                    else
+                       turn.innerHTML=`Player-turn : O `
             }
             else{
                     box[i].innerHTML='O';
