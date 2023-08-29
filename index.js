@@ -41,6 +41,7 @@ for(let i=0;i<9;i++){
                     box[i].innerHTML='X';
                     box[i].style.backgroundColor='red'
                     //this.style.backgroundColor='red'// We can use any one
+                    box[i].style.color='black'
                     click=false;
                     playClickSound();
                     turn.innerHTML=`Player-turn : O `
@@ -48,6 +49,7 @@ for(let i=0;i<9;i++){
             else{
                     box[i].innerHTML='O';
                     this.style.backgroundColor='green'
+                    box[i].style.color='black'
                     click=true;
                     playClickSound2()
                     turn.innerHTML=`Player-turn : X `
