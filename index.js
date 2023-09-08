@@ -74,7 +74,7 @@ for(let i=0;i<9;i++){
             winSound();
   
             }
-            if(cnt==9){
+            if(cnt==9 && gameInd){
                 turn.innerHTML="No Winner"
                 drawSound();
             }
