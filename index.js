@@ -10,6 +10,7 @@ function playClickSound() {
     audio.play();
 }
 function playClickSound2(){
+    var audio=new Audio("./audio/2.mpeg");
     audio.play();
 }
 function invalidPressSound(){
