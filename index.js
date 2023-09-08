@@ -10,7 +10,6 @@ function playClickSound() {
     audio.play();
 }
 function playClickSound2(){
-    var audio=new Audio("./audio/2.mpeg");
     audio.play();
 }
 function invalidPressSound(){
@@ -74,7 +73,7 @@ for(let i=0;i<9;i++){
             winSound();
   
             }
-            if(cnt==9){
+            if(cnt==9 && gameInd){
                 turn.innerHTML="No Winner"
                 drawSound();
             }
